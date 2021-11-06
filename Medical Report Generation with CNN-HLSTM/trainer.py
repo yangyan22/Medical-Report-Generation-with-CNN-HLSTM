@@ -251,7 +251,7 @@ class DebuggerBase:
         try:
             model_state = torch.load(self.args.load_word_model_path)
             model.load_state_dict(model_state['word_model'])
-            print("[Load Word Model Succeed!\n")
+            print("[Load Word Model Succeed!]\n")
         except Exception as err:
             print("[Load Word model Failed {}!]\n".format(err))
 
