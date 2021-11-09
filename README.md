@@ -2,8 +2,7 @@ Medical Image Report Generation with CNN-HLSTM: A basic model for medical image 
 
 To perform the evaluation of the metric Meteor, you need to download the package "paraphrase-en.gz" and put it to the path "./pycocoevalcap/meteor/data/paraphrase-en.gz". We did not upload it since the file was too big. 
 
-
-If you find the code useful, please cite our paper "Joint Embedding of Deep Visual and Semantic Features for Medical Image Report Generation", IEEE Transactions on Multimedia, 2021. 
+If you find our work or our code helpful for your research, please cite our paper: Joint Embedding of Deep Visual and Semantic Features for Medical Image Report Generation, IEEE Transactions on Multimedia, 2021. Authors: Yan Yang, Jun Yu*, Jian Zhang, Weidong Han*, Hanliang Jiang, and Qingming Huang
 
 # Dependencies
   - Python=3.7.3
@@ -30,7 +29,20 @@ If you find the code useful, please cite our paper "Joint Embedding of Deep Visu
   - pandas
   - torch
 
+The ground-truth TF-IDF features of MeSH and MeRP in the training set are constructed before training with codes in TF-IDF folder.
+
+The IF-IDF folder contains:
+ 1. the build_vocab_TF-IDF.py (for constructing the vocabulary in TF-IDF construction with a vocab_TF-IDF.json)
+ 2. mesh_tag.py (to select the top 30 MeSH and obtain the MeSH information for each study)
+ 3. TF_IDF_MeRP.py (to construct the report TF-IDF vector for each study)
+ 4. TF_IDF_MeSH.py (to construct the MeSh TF-IDF vector for each study)
+
 # reference codes: 
-https://github.com/cuhksz-nlp/R2Gen
+https://github.com/ZexinYan/Medical-Report-Generation
 
 https://github.com/tylin/coco-caption
+
+https://github.com/MorvanZhou/NLP-Tutorials
+
+# the metric meteor
+the paraphrase-en.gz should be put into the .\pycocoevalcap\meteor\data, since the file is too big to upload.
