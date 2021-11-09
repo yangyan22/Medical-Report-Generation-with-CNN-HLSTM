@@ -4,3 +4,33 @@ To perform the evaluation of the metric Meteor, you need to download the package
 
 
 If you find the code useful, please cite our paper "Joint Embedding of Deep Visual and Semantic Features for Medical Image Report Generation", IEEE Transactions on Multimedia, 2021. 
+
+# Dependencies
+  - Python=3.7.3
+  - pytorch=1.8.1
+  - pickle
+  - tqdm
+  - time
+  - argparse
+  - matplotlib
+  - sklearn
+  - json
+  - numpy 
+  - torchvision 
+  - itertools
+  - collections
+  - math
+  - os
+  - matplotlib
+  - PIL 
+  - itertools
+  - copy
+  - re
+  - abc
+  - pandas
+  - torch
+
+# reference codes: 
+https://github.com/cuhksz-nlp/R2Gen
+
+https://github.com/tylin/coco-caption
