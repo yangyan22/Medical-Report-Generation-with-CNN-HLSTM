@@ -181,8 +181,8 @@ if __name__ == '__main__':
                              shuffle=True)
 
     for i, (images1, images2, targets, prob, id) in enumerate(data_loader):
-        # print(images1.shape)  # torch.Size([BS, 3, 224, 224]) BS个侧面的图像 RGB颜色通道 图像大小
-        # print(images2.shape)  # torch.Size([BS, 3, 224, 224]) BS个正面的图像
+        # print(images1.shape)  # torch.Size([BS, 3, 224, 224])
+        # print(images2.shape)  # torch.Size([BS, 3, 224, 224])
         plt.imshow(images1[0][0])
         plt.show()
         plt.imshow(images2[0][0])
